@@ -190,6 +190,8 @@ namespace Flowframes
 
             List<Task> tasks = new List<Task>();
 
+            Program.mainForm.ValidateFactor();
+
             if (ai.aiName == Implementations.rifeCuda.aiName)
                 tasks.Add(AiProcess.RunRifeCuda(current.framesFolder, current.interpFactor, current.model.dir));
 

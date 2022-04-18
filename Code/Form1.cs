@@ -314,7 +314,6 @@ namespace Flowframes
 
         public void runBtn_Click(object sender, EventArgs e)
         {
-            ValidateFactor();
 
             if (!BatchProcessing.busy)      // Don't load values from gui if batch processing is used
                 Interpolate.current = GetCurrentSettings();
@@ -567,7 +566,6 @@ namespace Flowframes
 
         private void queueBtn_Click(object sender, EventArgs e)
         {
-            ValidateFactor();
 
             if (BatchProcessing.currentBatchForm != null)
             {
